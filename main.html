@@ -649,7 +649,7 @@
 -->
 
 <!--Reduce Repetition Using the repeat Function-->
-
+<!--
 <style>
     .item1 {background: lightskyblue;}
     .item2 {background: lightsalmon;}
@@ -663,7 +663,7 @@
         width: 100%;
         background: lightgray;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 10px;
     }
@@ -676,3 +676,131 @@
     <div class="item4">4</div>
     <div class="item5">5</div>
 </div>
+-->
+
+<!--Limit Item Size Using the minmax Function-->
+<!--
+<style>
+    .item1 {background: lightskyblue;}
+    .item2 {background: lightsalmon;}
+    .item3 {background: paleturquoise;}
+    .item4 {background: lightpink;}
+    .item5 {background: palegreen;}
+
+    .container {
+        font-size: 40px;
+        min-height: 300px;
+        width: 100%;
+        background: lightgray;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(90px, 1fr));
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+</div>
+-->
+
+<!--Create Flexible Layouts Using auto-fill-->
+<!--
+<style>
+    .item1 {background: lightskyblue;}
+    .item2 {background: lightsalmon;}
+    .item3 {background: paleturquoise;}
+    .item4 {background: lightpink;}
+    .item5 {background: palegreen;}
+
+    .container {
+        font-size: 40px;
+        min-height: 100px;
+        width: 100%;
+        background: lightgray;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .container2 {
+        font-size: 40px;
+        min-height: 100px;
+        width: 100%;
+        background: silver;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(60px, 1fr));
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+</div>
+<div class="container2">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+</div>
+-->
+
+<!--Create Flexible Layouts Using auto-fit-->
+<!--
+<style>
+    .item1 {background: lightskyblue;}
+    .item2 {background: lightsalmon;}
+    .item3 {background: paleturquoise;}
+    .item4 {background: lightpink;}
+    .item5 {background: palegreen;}
+
+    .container {
+        font-size: 40px;
+        min-height: 100px;
+        width: 100%;
+        background: lightgray;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .container2 {
+        font-size: 40px;
+        min-height: 100px;
+        width: 100%;
+        background: silver;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+</div>
+<div class="container2">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+</div>
+-->
+
+<!--Use Media Queries to Create Responsive Layouts-->
+
