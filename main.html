@@ -940,30 +940,36 @@
                 ". b1 b1 b2 b2 b3 b3 .";
             grid-gap: 10px;
         }
-        header {
+        #header {
             background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 32%, rgba(19,108,126,1) 100%);
             padding: 1%;
             grid-area: h;
         }
         #header-img {
-            position: absolute;
+            float: left;
             background-color: tomato;
             grid-area: hi;
+            width: 7%;
+            height: auto;
         }
         #header-txt {
+            position: relative;
             margin-left: 10%;
             color: white;
             grid-area: h;
+            /**background-color: burlywood;**/
+            font-size: 4vw;
         }
         #nav-bar {
             background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 32%, rgba(19,108,126,1) 100%);
+            grid-area: n;
         }
     </style>    
   <body>
     <header id="header">
-      <img id="header-img" src="https://i.imgur.com/AdIRfq4.png" width=10%>
+      <img id="header-img" src="https://i.imgur.com/AdIRfq4.png">
       <h1 id="header-txt">DELTA WEB HOSTING SOLUTIONS<h1>
       <nav id="nav-bar">
-        <a href
+        <a href=""
 
 </html>
