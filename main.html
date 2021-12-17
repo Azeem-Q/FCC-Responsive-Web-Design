@@ -934,7 +934,7 @@
             background: transparent;
             display: flex;
             align-items: center;
-            position: fixed;
+            /**position: fixed;**/
             columns: auto;
         }
         #header-img {
@@ -967,6 +967,9 @@
             background: rgb(99, 49, 9);
             color: rgb(255, 240, 224);
         }
+        #form {
+            color: rgb(99, 49, 9);
+        }
     </style>    
   <body>
     <header id="header">
@@ -977,6 +980,9 @@
         <a class="nav-link" href="#how-it-works">How It Works</a>
         <a class="nav-link" href="#pricing">Pricing</a>
       </nav>
-      <form id="form"
     </header>
+    <form id="form">
+        <label for="email">Subscribe</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+    </form>
 </html>
