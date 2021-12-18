@@ -926,6 +926,7 @@
 <!--Build a Product Landing Page-->
 <!DOCTYPE html>
 <html>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Space+Mono&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: rgb(255, 240, 224);
@@ -934,7 +935,7 @@
             background: transparent;
             display: flex;
             align-items: center;
-            /**position: fixed;**/
+            position: fixed;
             columns: auto;
         }
         #header-img {
@@ -946,13 +947,14 @@
         }
         #header-txt {
             position: relative;
-            margin-left: 3vw;
+            margin-left: 1vw;
             color: rgb(99, 49, 9);
-            grid-area: h;
+            font-family: Overpass;
             /**background-color: burlywood;**/
             font-size: 3vw;
         }
         #nav-bar {
+            font-family: Space Mono;
             font-size: 2vw;
             margin-left: 3vw;
         }
@@ -968,6 +970,10 @@
             color: rgb(255, 240, 224);
         }
         #form {
+            display: flex;
+            justify-content: center;
+            padding-top: 15vw;
+            font-family: overpass;
             color: rgb(99, 49, 9);
         }
     </style>    
