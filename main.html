@@ -930,18 +930,19 @@
     <style>
         body {
             background-color: rgb(255, 240, 224);
+            position: relative;
         }
         #header {
-            background: transparent;
+            background: rgb(255, 240, 224);
             display: flex;
             align-items: center;
             position: fixed;
             columns: auto;
+            top: 0;
         }
         #header-img {
             float: left;
             background-color: tomato;
-            grid-area: hi;
             width: 7%;
             height: auto;
         }
@@ -972,9 +973,22 @@
         #form {
             display: flex;
             justify-content: center;
-            padding-top: 15vw;
             font-family: overpass;
             color: rgb(99, 49, 9);
+            margin-top: 15vw;
+        }
+        .hidden-label {
+            display: none;
+        }
+        .form-style {
+            border: solid rgb(99, 49, 9) 0.25vw;
+            width: 20vw;
+            height: auto;
+        }
+        .button-style {
+            border: solid rgb(99, 49, 9) 10px;
+            background: rgb(99, 49, 9);
+            color: rgb(255, 240, 224);
         }
     </style>    
   <body>
@@ -988,7 +1002,51 @@
       </nav>
     </header>
     <form id="form">
-        <label for="email">Subscribe</label>
-        <input type="email" id="email" name="email" placeholder="Email">
+        <label class="hidden-label" for="email">Subscribe</label>
+        <input class="form-style" type="email" id="email" name="email" placeholder="Email">
     </form>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
+    <p>some text here</p><br>
 </html>
