@@ -986,18 +986,18 @@
             width: 20vw;
             height: auto;
         }
-        @media (max-width: 320px) {
+        @media (max-width: 640px) {
             input[type=email] {
-                width: 20px;
+                width: 30vw;
                 height: auto;
             }
             
-        }
-        
+        }     
         .button-style {
             border: solid rgb(99, 49, 9) 10px;
             background: rgb(99, 49, 9);
             color: rgb(255, 240, 224);
+            font-weight: bold;
         }
     </style>    
   <body>
@@ -1013,5 +1013,6 @@
     <form id="form" action="https://www.freecodecamp.com/email-submit">
         <label class="hidden-label" for="email">Subscribe</label>
         <input type="email" id="email" name="email" placeholder="Email">
+        <input class="button-style" type="submit" value="Subscribe">
     </form>
 </html>
