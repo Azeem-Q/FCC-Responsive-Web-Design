@@ -984,17 +984,25 @@
         input[type=email] {
             border: solid rgb(99, 49, 9) 1px;
             width: 20vw;
-            height: auto;
+            height: 2.5vw;
         }
         @media (max-width: 640px) {
             input[type=email] {
-                width: 30vw;
-                height: auto;
+                width: 20vw;
+                height: 4vw;
             }
-            
+            .button-style {
+                background: rgb(99, 49, 9);
+                color: rgb(255, 240, 224);
+                font-weight: bold;
+                font-size: 5pxpx;
+                width: auto;
+                height: 4.8vw;
+            }
+
         }     
         .button-style {
-            border: solid rgb(99, 49, 9) 10px;
+            border: solid rgb(99, 49, 9) 1px;
             background: rgb(99, 49, 9);
             color: rgb(255, 240, 224);
             font-weight: bold;
@@ -1012,7 +1020,7 @@
     </header>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
         <label class="hidden-label" for="email">Subscribe</label>
-        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="email" id="email" name="email" placeholder="Email" required>
         <input class="button-style" type="submit" value="Subscribe">
     </form>
 </html>
