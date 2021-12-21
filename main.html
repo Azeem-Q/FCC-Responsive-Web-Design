@@ -963,7 +963,7 @@
         .nav-link {
             color: rgb(99, 49, 9);
             text-decoration: none;
-            padding: 0.4vw 1vw 0.4vw 1vw;
+            padding: 1vh 1vw 1vh 1vw;
             margin: auto -0.5vw auto -0.5vw;
         }
         .nav-link:hover, .nav-link:focus  {
@@ -976,7 +976,7 @@
             flex-wrap: wrap;
             font-family: overpass;
             color: rgb(99, 49, 9);
-            margin-top: 15vw;
+            margin-top: 5vh;
         }
         .hidden-label {
             display: none;
@@ -984,12 +984,12 @@
         input[type=email] {
             border: solid rgb(99, 49, 9) 1px;
             width: 20vw;
-            height: 2.5vw;
+            height: 4.25vh;
         }
         @media (max-width: 640px) {
             input[type=email] {
                 width: 20vw;
-                height: 4vw;
+                height: 4.25vh;
             }
             .button-style {
                 background: rgb(99, 49, 9);
@@ -997,7 +997,13 @@
                 font-weight: bold;
                 font-size: 5pxpx;
                 width: auto;
-                height: 4.8vw;
+                height: 5.2vh;
+            }
+            #video {
+                display: block;
+                margin: 10vh auto 0px auto;
+                width: 50vw;
+                height: auto;
             }
 
         }     
@@ -1005,6 +1011,20 @@
             border: solid rgb(99, 49, 9) 1px;
             background: rgb(99, 49, 9);
             color: rgb(255, 240, 224);
+            font-weight: bold;
+        }
+        #video {
+            display: block;
+            margin: 10vh auto 0px auto;
+            width: 50vw;
+            height: 60vh;
+        }
+        #title {
+            display: flex;
+            justify-content: center;
+            margin-top: 30vh;
+            color: rgb(99, 49, 9);
+            font-size: 2.5vw;
             font-weight: bold;
         }
     </style>    
@@ -1018,10 +1038,11 @@
         <a class="nav-link" href="#pricing">Pricing</a>
       </nav>
     </header>
+    <h1 id="title">Affordable & Reliable Web Hosting Solutions</h1>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
         <label class="hidden-label" for="email">Subscribe</label>
         <input type="email" id="email" name="email" placeholder="Email" required>
         <input class="button-style" id="submit" type="submit" value="Subscribe">
     </form>
-    <video><iframe width="560" height="315" src="https://www.youtube.com/embed/gh821fQXnSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></video>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/gh821fQXnSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </html>
