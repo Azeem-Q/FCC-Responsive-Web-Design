@@ -1008,30 +1008,15 @@
             }
             #pricing {
                 display: grid;
-                grid-template-rows: repeat(3, 50vh);
+                grid-template-rows: repeat(3, 1fr);
                 background: crimson;
                 align-items: center;
                 justify-content: center;
-                justify-items: stretch;
+                justify-items: center;
                 grid-gap: 20px;
                 text-align: center;
             }
-            .starter {
-                background: violet;
-                width: 80vw;
-                height: 50vh;
-            }
-            .pro {
-                background: yellow;
-                width: 80vw;
-                height: 50vh;
-            }
-            .enterprise {
-                background: yellowgreen;
-                width: 80vw;
-                height: 50vh;
-            }
-
+            
         }     
         .button-style {
             border: solid rgb(99, 49, 9) 1px;
@@ -1065,7 +1050,7 @@
         }
         #pricing {
             display: grid;
-            grid-template-columns: repeat(3, 30vw);
+            grid-template-columns: repeat(3, 1fr);
             height: 50vh;
             align-items: center;
             justify-content: center;
@@ -1074,22 +1059,9 @@
             text-align: center;
             background: crimson;
         }
-        .starter {
+        .price-col {
             background: violet;
-            width: 30vw;
-            height: 50vh;
         }
-        .pro {
-            background: yellow;
-            width: 30vw;
-            height: 50vh;
-        }
-        .enterprise {
-            background: yellowgreen;
-            width: 30vw;
-            height: 50vh;
-        }
-
     </style>    
   <body>
     <header id="header">
@@ -1126,9 +1098,9 @@
         <p>We use industry standard cPanel</p>
     </div>
     <div id="pricing">
-        <div class="starter">Starter</div>
-        <div class="pro">Pro</div>
-        <div class="enterprise">Enterprise</div>
+        <div class="price-col">Starter</div>
+        <div class="price-col">Pro</div>
+        <div class="price-col">Enterprise</div>
     </div>
 
 </html>
