@@ -1006,6 +1006,29 @@
                 width: 50vw;
                 height: auto;
             }
+            #pricing {
+                display: grid;
+                grid-auto-flow: row;
+                align-items: center;
+                grid-template-columns: 80vw 80vw 80vw;
+                justify-content: center;
+                grid-gap: 20px;
+            }
+            .starter {
+                background: violet;
+                width: 80vw;
+                height: 50vh;
+            }
+            .pro {
+                background: yellow;
+                width: 80vw;
+                height: 50vh;
+            }
+            .enterprise {
+                background: yellowgreen;
+                width: 80vw;
+                height: 50vh;
+            }
 
         }     
         .button-style {
@@ -1038,6 +1061,29 @@
             display: flex;
             justify-content: center;
         }
+        #pricing {
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 20px;
+        }
+        .starter {
+            background: violet;
+            width: 30vw;
+            height: 50vh;
+        }
+        .pro {
+            background: yellow;
+            width: 30vw;
+            height: 50vh;
+        }
+        .enterprise {
+            background: yellowgreen;
+            width: 30vw;
+            height: 50vh;
+        }
+
     </style>    
   <body>
     <header id="header">
@@ -1055,7 +1101,9 @@
         <input type="email" id="email" name="email" placeholder="Email" required>
         <input class="button-style" id="submit" type="submit" value="Subscribe">
     </form>
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/gh821fQXnSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="how-it-works">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/gh821fQXnSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <div id="features">
         <h1 class="features-title">Included With Every Plan</h1>
         <h2>Money Back Guarantee</h2>
@@ -1071,4 +1119,10 @@
         <h2>cPanel Access</h2>
         <p>We use industry standard cPanel</p>
     </div>
+    <div id="pricing">
+        <div class="starter"></div>
+        <div class="pro"></div>
+        <div class="enterprise"></div>
+    </div>
+
 </html>
