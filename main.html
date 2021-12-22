@@ -1008,11 +1008,13 @@
             }
             #pricing {
                 display: grid;
-                grid-auto-flow: row;
+                grid-template-rows: repeat(3, 50vh);
+                background: crimson;
                 align-items: center;
-                grid-template-columns: 80vw 80vw 80vw;
                 justify-content: center;
+                justify-items: stretch;
                 grid-gap: 20px;
+                text-align: center;
             }
             .starter {
                 background: violet;
@@ -1063,10 +1065,14 @@
         }
         #pricing {
             display: grid;
-            grid-auto-flow: column;
+            grid-template-columns: repeat(3, 30vw);
+            height: 50vh;
             align-items: center;
             justify-content: center;
+            justify-items: center;
             grid-gap: 20px;
+            text-align: center;
+            background: crimson;
         }
         .starter {
             background: violet;
@@ -1120,9 +1126,9 @@
         <p>We use industry standard cPanel</p>
     </div>
     <div id="pricing">
-        <div class="starter"></div>
-        <div class="pro"></div>
-        <div class="enterprise"></div>
+        <div class="starter">Starter</div>
+        <div class="pro">Pro</div>
+        <div class="enterprise">Enterprise</div>
     </div>
 
 </html>
