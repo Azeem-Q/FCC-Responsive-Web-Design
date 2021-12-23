@@ -1024,17 +1024,16 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(1, 1fr);
-            align-items: stretch;
-            justify-content: space-around;
-            justify-items: stretch;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
             grid-gap: 20px;
             text-align: center;
-            background: crimson;
         }
         .price-col {
-            background: violet;
             width: 30vw;
             height: 50vh;
+            border: solid rgb(99, 49, 9) 2px;
         }
         @media only screen and (max-width: 800px) {
             input[type=email] {
@@ -1059,7 +1058,6 @@
                 display: grid;
                 grid-template-rows: repeat(3, 1fr);
                 grid-template-columns: repeat(1, 1fr);
-                background: rgb(14, 2, 4);
                 align-items: center;
                 justify-content: center;
                 justify-items: center;
@@ -1067,9 +1065,10 @@
                 text-align: center;
             }
             .price-col {
-                background: violet;
+                background: radial-gradient(circle, rgba(233,223,212,1) 0%, rgba(228,211,195,1) 50%, rgba(228,211,195,1) 100%, rgba(194,173,153,1) 100%);
                 width: 80vw;
                 height: 70vh;
+                border: solid rgb(99, 49, 9) 2px;
             } 
         }
     </style>    
