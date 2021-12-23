@@ -926,6 +926,9 @@
 <!--Build a Product Landing Page-->
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
     <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Space+Mono&display=swap" rel="stylesheet">
     <style>
         body {
@@ -986,37 +989,6 @@
             border: solid rgb(99, 49, 9) 1px;
             width: 20vw;
             height: 4.25vh;
-        }
-        @media (max-width: 640px) {
-            input[type=email] {
-                width: 20vw;
-                height: 4.25vh;
-            }
-            .button-style {
-                background: rgb(99, 49, 9);
-                color: rgb(255, 240, 224);
-                font-weight: bold;
-                font-size: 5pxpx;
-                width: auto;
-                height: 5.2vh;
-            }
-            #video {
-                display: block;
-                margin: 10vh auto 0px auto;
-                width: 50vw;
-                height: auto;
-            }
-            #pricing {
-                display: grid;
-                grid-template-rows: repeat(3, 1fr);
-                background: crimson;
-                align-items: center;
-                justify-content: center;
-                justify-items: center;
-                grid-gap: 20px;
-                text-align: center;
-            }
-            
         }     
         .button-style {
             border: solid rgb(99, 49, 9) 1px;
@@ -1052,15 +1024,47 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             height: 50vh;
-            align-items: center;
-            justify-content: center;
-            justify-items: center;
+            align-items: stretch;
+            justify-content: space-around;
+            justify-items: stretch;
             grid-gap: 20px;
             text-align: center;
             background: crimson;
         }
         .price-col {
             background: violet;
+        }
+        @media only screen and (max-width: 640px) {
+            input[type=email] {
+                width: 20vw;
+                height: 4.25vh;
+            }
+            .button-style {
+                background: rgb(29, 17, 202);
+                color: rgb(255, 240, 224);
+                font-weight: bold;
+                font-size: 5pxpx;
+                width: auto;
+                height: 5.2vh;
+            }
+            #video {
+                display: block;
+                margin: 10vh auto 0px auto;
+                width: 50vw;
+                height: auto;
+            }
+            #pricing {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                width: 80vw;
+                background: rgb(14, 2, 4);
+                align-items: center;
+                justify-content: space-around;
+                justify-items: center;
+                grid-gap: 20px;
+                text-align: center;
+            }
+            
         }
     </style>    
   <body>
